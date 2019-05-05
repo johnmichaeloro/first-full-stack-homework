@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Emphasis Database</h1>
+    <h2>Examples of Emphasis</h2>
+    <ul>
+      <%for(let i = 0; i < examples.length; i++) {%>
+        <li><a href="examples/<%=examples[i].id%>"><%=examples[i].title%> by <%=examples[i].author%></a></li>
+      <%}%>
+    </ul>
+    <button type="submit" name="Add an Entry"><a href="examples/new">Add an Entry</a></button>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Edit <%=examples.title%> by <%=examples.author%></h1>
+    <form action="/examples/<%=examples.id%>?_method=PUT" method="POST">
+      Author: <input type="text" name="author" value="<%=examples.author%>">
+      Title: <input type="text" name="title" value="<%=examples.title%>">
+      Link: <input type="text" name="link" value="<%=examples.link%>">
+      Yellow Sentence: <input type="text" name="yellowSentence" value="<%=examples.yellowSentence%>">
+      Green Sentence: <input type="text" name="greenSentence" value="<%=examples.greenSentence%>">
+      Blue Sentence: <input type="text" name="blueSentence" value="<%=examples.blueSentence%>">
+      <input type="submit" name="Edit Entry" value="Submit Changes">
+    </form>
+  </body>
+</html>

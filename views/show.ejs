@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>View Example</h1>
+    <ul>
+      <li>Author: <%=examples.author%></li>
+      <li>Title: <%=examples.title%></li>
+      <li>Link: <%=examples.link%></li>
+      <li>Yellow Sentence: <%=examples.yellowSentence%></li>
+      <li>Green Sentence: <%=examples.greenSentence%></li>
+      <li>Blue Sentence: <%=examples.blueSentence%></li>
+    </ul>
+    <button type="submit" name="edit entry"><a href="/examples/<%=examples.id%>/edit">Edit Entry</a></button>
+    <form action="/examples/<%=examples.id%>?_method=DELETE" method="Post">
+      <button type="submit" value="DELETE">Delete Entry</button>
+    </form>
+    <button type="submit"><a href="/examples">Return to Index</a></button>
+  </body>
+</html>
